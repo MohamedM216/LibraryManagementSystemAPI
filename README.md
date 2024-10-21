@@ -39,92 +39,92 @@ LibraryManagementSystemAPI is a C# ASP.NET Core backend API for managing book bo
     Email Handling: SMTP
 
 <h2>📂 Project Structure</h2>
-    LibraryManagementSystemAPI/  
-    │  
-    ├── **Attributes/**  
-    │   └── IsbnAttribute.cs  
-    │  
-    ├── **Controllers/**  
-    │   ├── AdminAuthController.cs  
-    │   ├── AuthorAuthController.cs  
-    │   ├── BookController.cs  
-    │   ├── BorrowingController.cs  
-    │   ├── MemberController.cs  
-    │   ├── ReturnController.cs  
-    │   └── TrackUsersController.cs  
-    │  
-    ├── **DTOModels/** (Data Transfer Objects)  
-    │   ├── DtoAdmin.cs  
-    │   ├── DtoAuthor.cs  
-    │   ├── DtoBook.cs  
-    │   ├── DtoCustomer.cs  
-    │   ├── DtoMember.cs  
-    │   └── DtoPaymentIntent.cs  
-    │  
-    ├── **Data/** (Entity Models and Database Context)  
-    │   ├── Admin.cs  
-    │   ├── AdminRefreshToken.cs  
-    │   ├── ApplicationDbContext.cs  
-    │   ├── Author.cs  
-    │   ├── AuthorRefreshToken.cs  
-    │   ├── AuthorsDue.cs  
-    │   ├── Book.cs  
-    │   ├── Borrowing.cs  
-    │   ├── Member.cs  
-    │   ├── MemberRefreshToken.cs  
-    │   ├── Transaction.cs  
-    │   └── User.cs  
-    │  
-    ├── **Filters/**  
-    │   ├── IdValidationFilterAttribute.cs  
-    │   └── LoggingActionMethodsInfoFilter.cs  
-    │  
-    ├── **Middlewares/**  
-    │   └── ProfilingMiddleware.cs  
-    │  
-    ├── **Migrations/**  
-    │  
-    ├── **Options/** (Configuration Options)  
-    │   ├── JwtOptions.cs  
-    │   └── StripeInfo.cs  
-    │  
-    ├── **Properties/**  
-    │   └── launchSettings.json  
-    │  
-    ├── **Requests/**  
-    │   ├── AuthModel.cs  
-    │   └── AuthenticationRequest.cs  
-    │  
-    ├── **Services/**  
-    │   ├── **BackgroundServices/**  
-    │   │   ├── LateFeeBackgroundService.cs  
-    │   │   └── LateFeeEmailService.cs  
-    │   │  
-    │   ├── **Interfaces/**  
-    │   │   └── IEmailService.cs  
-    │   │  
-    │   ├── AdminAuthService.cs  
-    │   ├── AuthorAuthService.cs  
-    │   ├── BookService.cs  
-    │   ├── BorrowingService.cs  
-    │   ├── EmailService.cs  
-    │   ├── MemberAuthService.cs  
-    │   ├── PaymentService.cs  
-    │   ├── ReturnService.cs  
-    │   └── WelcomeEmailService.cs  
-    │  
-    ├── **ValidationClasses/**  
-    │   └── ValidateStripeEmailAccount.cs  
-    │  
-    ├── bin/Debug/net8.0/  
-    ├── obj/  
-    ├── LibraryManagementSystemAPI.csproj  
-    ├── LibraryManagementSystemAPI.http  
-    ├── LibraryManagementSystemAPI.sln  
-    ├── Program.cs  
-    ├── README.md  
-    ├── appsettings.Development.json  
-    └── appsettings.json  
+        LibraryManagementSystemAPI/  
+        │  
+        ├── **Attributes/**  
+        │   └── IsbnAttribute.cs  
+        │  
+        ├── **Controllers/**  
+        │   ├── AdminAuthController.cs  
+        │   ├── AuthorAuthController.cs  
+        │   ├── BookController.cs  
+        │   ├── BorrowingController.cs  
+        │   ├── MemberController.cs  
+        │   ├── ReturnController.cs  
+        │   └── TrackUsersController.cs  
+        │  
+        ├── **DTOModels/** (Data Transfer Objects)  
+        │   ├── DtoAdmin.cs  
+        │   ├── DtoAuthor.cs  
+        │   ├── DtoBook.cs  
+        │   ├── DtoCustomer.cs  
+        │   ├── DtoMember.cs  
+        │   └── DtoPaymentIntent.cs  
+        │  
+        ├── **Data/** (Entity Models and Database Context)  
+        │   ├── Admin.cs  
+        │   ├── AdminRefreshToken.cs  
+        │   ├── ApplicationDbContext.cs  
+        │   ├── Author.cs  
+        │   ├── AuthorRefreshToken.cs  
+        │   ├── AuthorsDue.cs  
+        │   ├── Book.cs  
+        │   ├── Borrowing.cs  
+        │   ├── Member.cs  
+        │   ├── MemberRefreshToken.cs  
+        │   ├── Transaction.cs  
+        │   └── User.cs  
+        │  
+        ├── **Filters/**  
+        │   ├── IdValidationFilterAttribute.cs  
+        │   └── LoggingActionMethodsInfoFilter.cs  
+        │  
+        ├── **Middlewares/**  
+        │   └── ProfilingMiddleware.cs  
+        │  
+        ├── **Migrations/**  
+        │  
+        ├── **Options/** (Configuration Options)  
+        │   ├── JwtOptions.cs  
+        │   └── StripeInfo.cs  
+        │  
+        ├── **Properties/**  
+        │   └── launchSettings.json  
+        │  
+        ├── **Requests/**  
+        │   ├── AuthModel.cs  
+        │   └── AuthenticationRequest.cs  
+        │  
+        ├── **Services/**  
+        │   ├── **BackgroundServices/**  
+        │   │   ├── LateFeeBackgroundService.cs  
+        │   │   └── LateFeeEmailService.cs  
+        │   │  
+        │   ├── **Interfaces/**  
+        │   │   └── IEmailService.cs  
+        │   │  
+        │   ├── AdminAuthService.cs  
+        │   ├── AuthorAuthService.cs  
+        │   ├── BookService.cs  
+        │   ├── BorrowingService.cs  
+        │   ├── EmailService.cs  
+        │   ├── MemberAuthService.cs  
+        │   ├── PaymentService.cs  
+        │   ├── ReturnService.cs  
+        │   └── WelcomeEmailService.cs  
+        │  
+        ├── **ValidationClasses/**  
+        │   └── ValidateStripeEmailAccount.cs  
+        │  
+        ├── bin/Debug/net8.0/  
+        ├── obj/  
+        ├── LibraryManagementSystemAPI.csproj  
+        ├── LibraryManagementSystemAPI.http  
+        ├── LibraryManagementSystemAPI.sln  
+        ├── Program.cs  
+        ├── README.md  
+        ├── appsettings.Development.json  
+        └── appsettings.json  
 
  <h2>🚀 Getting Started</h2>
 Prerequisites
