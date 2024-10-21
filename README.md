@@ -39,6 +39,8 @@ LibraryManagementSystemAPI is a C# ASP.NET Core backend API for managing book bo
     Email Handling: SMTP
 
 <h2>📂 Project Structure</h2>
+
+
         LibraryManagementSystemAPI/  
         │  
         ├── **Attributes/**  
@@ -125,6 +127,7 @@ LibraryManagementSystemAPI is a C# ASP.NET Core backend API for managing book bo
         ├── README.md  
         ├── appsettings.Development.json  
         └── appsettings.json  
+
 
  <h2>🚀 Getting Started</h2>
 Prerequisites
