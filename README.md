@@ -1,8 +1,8 @@
-📚<h2>Library Management System API</h2>
+<h2>📚 Library Management System API</h2>
 
 LibraryManagementSystemAPI is a C# ASP.NET Core backend API for managing book borrowing with JWT authentication, role-based authorization, and Stripe payment integration. This system enables authors to manage their books and members to borrow and return books. It also includes automated email notifications and background services for handling overdue returns and payment reconciliation.
 
-🌟<h2>Features</h2>
+<h2>🌟 Features</h2>
 
     JWT Authentication, Refresh JWT Tokens & Role-Based Authorization:
         Authors and members have different roles and permissions.
@@ -29,7 +29,7 @@ LibraryManagementSystemAPI is a C# ASP.NET Core backend API for managing book bo
     Logging:
         Logs critical events and system activities.
 
-🛠️ <h2>Technologies Used</h2>
+ <h2>🛠️ Technologies Used</h2>
 
     Backend: ASP.NET Core
     Authentication: JWT Tokens
@@ -38,7 +38,7 @@ LibraryManagementSystemAPI is a C# ASP.NET Core backend API for managing book bo
     Background Services: Hosted Services in ASP.NET Core
     Email Handling: SMTP
 
-🚀 <h2>Getting Started</h2>
+ <h2>🚀 Getting Started</h2>
 Prerequisites
 
 Make sure you have the following installed:
@@ -53,31 +53,31 @@ Make sure you have the following installed:
 Installation
 
     Clone the repository:
-git clone https://github.com/your-username/LibraryManagementSystemAPI.git
-cd LibraryManagementSystemAPI
+    git clone https://github.com/your-username/LibraryManagementSystemAPI.git
+    cd LibraryManagementSystemAPI
 
 Set up the database:
 
     Update the connection string in appsettings.json.
 
-"ConnectionStrings": {
-  "DefaultConnection": "Server=localhost;Database=yourDb;Trusted_Connection=True;"
-}
+    "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Database=yourDb;Trusted_Connection=True;"
+    }
 
 Configure Stripe API keys and SMTP:
 
     Add your Stripe and SMTP credentials in appsettings.json.
 
-"Stripe": {
-  "SecretKey": "your-stripe-secret-key",
-  "PublishableKey": "your-stripe-publishable-key"
-},
-"EmailSettings": {
-  "SMTPHost": "smtp.your-email.com",
-  "SMTPPort": 25,
-  "SenderEmail": "your-email@example.com",
-  "SenderPassword": "your-email-password"
-}
+        "Stripe": {
+          "SecretKey": "your-stripe-secret-key",
+          "PublishableKey": "your-stripe-publishable-key"
+        },
+        "EmailSettings": {
+          "SMTPHost": "smtp.your-email.com",
+          "SMTPPort": 25,
+          "SenderEmail": "your-email@example.com",
+          "SenderPassword": "your-email-password"
+        }
 
 Apply migrations:
 
